@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sty, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+ <div class="animatedBox"></div>
+ </body>
+ <style>
+ .animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   }
+   
+   @keyframes example {
+     0% {background-color: red; left: 0px; top: 0px;}
+     25% {background-color: yellow; left: 200px; top: 0px;}
+     50% {background-color: blue; left: 200px; top: 200px;}
+     75% {background-color: green; left: 0px; top: 200px;}
+     100% {background-color: red; left: 0px; top: 0px;}
+   } 
+      </style>
+      <style>
+        @keyframes flower {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+ }
+  50% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+ }
+}
+
+.flower {
+ width: 100px;
+ height: 100px;
+ background-color: #FFD700;
+ border-radius: 50%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ animation: flower 1s infinite;
+}
+
+.text {
+ font-size: 30px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ color: rgba(18, 69, 171, 0.475)11, 128, 0.475);
+ text-shadow: 2px 2px 2px rgb(255, 0, 47);
+}
+
+h2 {
+    text-align: center;
+}
+      </style>
+      <div class="flower"></div>
+      <h1 class="text">te busco que horas amanhã? 👀</h1>
+
+</body>
+</html>
